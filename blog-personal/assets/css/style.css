@@ -68,24 +68,42 @@ body {
         button {
             margin: 0.2rem;
             padding: 1rem;
+            max-width: 10rem;   
             background-color: white;
             border: 2px solid black;
             border-radius: 0.5rem;
+
+            a {
+                color: black;
+            }
         }
 
         button:hover {
             background-color: black;
-            color: white;
+
+            a {
+                color: white
+            }
         }
 
         button:last-child {
             background-color: black;
-            color: white;
+            
+            a {
+                color: white;
+            }
         }
 
         button:last-child:hover {
             background-color: white;
-            color: black;
+
+            a {
+                color: black;
+            }
+        }
+
+        a {
+            text-decoration: none;
         }
     }
 
@@ -242,9 +260,4 @@ footer {
         display: flex;
         flex-direction: column;
     }
-}
-
-@media screen and (max-width: 315px) {
-    
-    
 }
